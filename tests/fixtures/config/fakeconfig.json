@@ -1,0 +1,16 @@
+{
+    "atualizacao": "2015-10-02 06:01:21",
+    "tpAmb": 2,
+    "razaosocial": "Fake Materiais de construção Ltda",
+    "siglaUF": "SP",
+    "cnpj": "00716345000119",
+    "schemes": "PL_MDFe_300",
+    "versao": "3.00",
+    "tokenIBPT": "AAAAAAA",
+    "aProxyConf": {
+        "proxyIp": "",
+        "proxyPort": "",
+        "proxyUser": "",
+        "proxyPass": ""
+    }
+}

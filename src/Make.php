@@ -29,6 +29,15 @@ use DateTime;
 
 class Make
 {
+
+    /**
+     * dom
+     * documento dom contento xml do mdfe
+     *
+     * @var [DomImproved]
+     */
+    private $dom;
+
     /**
      * @var array
      */

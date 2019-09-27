@@ -32,7 +32,6 @@ class Webservices
     {
         $this->toStd($xml);
     }
-
     /**
      * Get webservices parameters for specific conditions
      * the parameters with the authorizers are in a json file in
@@ -77,7 +76,6 @@ class Webservices
         }
         return $this->std;
     }
-
     /**
      * Return WS parameters in json format
      * @return string
@@ -108,7 +106,6 @@ class Webservices
         $this->json = json_encode($aWS);
         $this->std = json_decode(json_encode($aWS));
     }
-
     /**
      * Extract data from wbservices XML strorage to a array
      * @param SimpleXMLElement $node

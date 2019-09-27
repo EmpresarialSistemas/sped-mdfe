@@ -9,7 +9,6 @@ use NFePHP\MDFe\Exception\DocumentsException;
 class Complements
 {
     protected static $urlPortal = 'http://www.portalfiscal.inf.br/mdfe';
-
     /**
      * Authorize document adding his protocol
      * @param string $request

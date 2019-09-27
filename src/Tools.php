@@ -138,7 +138,7 @@ class Tools extends ToolsCommon
         if (empty($uf)) {
             $uf = $this->config->siglaUF;
         }
-        //carrega serviço
+        
         $servico = 'MDFeStatusServico';
         $this->servico(
             $servico,
@@ -334,8 +334,15 @@ class Tools extends ToolsCommon
             . "<detEvento versaoEvento=\"$this->urlVersion\">"
             . "$tagAdic"
             . "</detEvento>"
-            . "</infEvento>"
+            . "</infEvento>";
+        
+        
+        
+        $lote = $dt->format('YmdHis').rand(0, 9);
+        $request = "<eventoMDFe xmlns=\"$this->urlPortal\" versao=\"$this->urlVersion\">"
+            . $request
             . "</eventoMDFe>";
+
         //assinatura dos dados
         $request = Signer::sign(
             $this->certificate,

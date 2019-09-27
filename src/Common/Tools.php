@@ -192,7 +192,6 @@ class Tools
     {
         date_default_timezone_set(TimeZoneByUF::get($acronym));
     }
-
     /**
      * Set application version
      * @param string $ver
@@ -214,7 +213,6 @@ class Tools
         $this->soap = $soap;
         $this->soap->loadCertificate($this->certificate);
     }
-
     /**
      * Set OPENSSL Algorithm using OPENSSL constants
      * @param int $algorithm
@@ -255,7 +253,6 @@ class Tools
     {
         return UFlist::getCodeByUF($acronym);
     }
-
     /**
      * Recover state acronym from cUF number
      * @param int $cUF
@@ -265,7 +262,6 @@ class Tools
     {
         return UFlist::getUFByCode($cUF);
     }
-
     /**
      * Validate cUF from the key content and returns the state acronym
      * @param string $chave
@@ -335,7 +331,6 @@ class Tools
             $schema
         );
     }
-
     /**
      * Alter environment from "homologacao" to "producao" and vice-versa
      * @param int $tpAmb
@@ -348,7 +343,6 @@ class Tools
             $this->ambiente = ($tpAmb == 1) ? 'producao' : 'homologacao';
         }
     }
-
     /**
      * Set option for canonical transformation see C14n
      * @param array $opt
@@ -361,7 +355,6 @@ class Tools
         }
         return $this->canonical;
     }
-
     /**
      * Assembles all the necessary parameters for soap communication
      * @param string $service
@@ -429,7 +422,6 @@ class Tools
             ['cUF' => $this->urlcUF, 'versaoDados' => $this->urlVersion]
         );
     }
-
     /**
      * Send request message to webservice
      * @param array $parameters
@@ -450,7 +442,6 @@ class Tools
             $this->objHeader
         );
     }
-
     /**
      * Recover path to xml data base with list of soap services
      * @return string

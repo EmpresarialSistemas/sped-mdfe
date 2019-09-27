@@ -37,7 +37,6 @@ class DocumentsException extends \InvalidArgumentException implements ExceptionI
         $msg = self::replaceMsg(self::$list[$code], $msg);
         return new static($msg);
     }
-
     private static function replaceMsg($input, $msg)
     {
         return str_replace('{{msg}}', $msg, $input);
